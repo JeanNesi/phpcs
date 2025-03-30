@@ -1,0 +1,58 @@
+# Sistema de arquivos padrão
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração do PHP
+*.log
+*.cache
+*.tmp
+
+# Pastas do Composer
+/vendor/
+composer.lock
+
+# Configurações do PHP_CodeSniffer
+/.phpcs.xml
+/.phpcs.xml.dist
+
+# IDEs e editores de código
+/.idea/
+/.vscode/
+/phpstorm.meta.php
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de backup
+*~
+*.bak
+*.swp
+
+# Arquivos de dependências do Composer
+composer.phar
+
+# Arquivos de cache do Composer
+/.composer/
+
+# PHP Unit
+.phpunit.result.cache
+
+# Ferramentas de desenvolvimento (caso tenha algum diretório específico)
+# node_modules (se houver utilização de Node.js no projeto)
+node_modules/
+
+# Arquivos de ambientes
+.env
+.env.local
+.env.*.local
+
+# Testes (caso você tenha diretórios de testes)
+tests/
+
+# Outras exclusões gerais
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.7z
+*.rar
