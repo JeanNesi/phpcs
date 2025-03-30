@@ -14,4 +14,4 @@ jobs:
       - name: Install dependencies
         run: composer install
       - name: Run PHP_CodeSniffer
-        run: vendor/bin/phpcs --standard=PSR12 --verbose src/
+        run: vendor/bin/phpcs --standard=PSR12 src/
