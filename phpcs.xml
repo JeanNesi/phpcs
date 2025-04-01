@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ruleset name="MeuPHPCSConfig">
+    <description>Configuração personalizada para o PHP_CodeSniffer</description>
+
+    <!-- Inclui padrões do PSR12 -->
+    <rule ref="PSR12"/>
+
+    <!-- Aspas simples -->
+    <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
+
+    <!-- Espaçamento e indentação -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+    <rule ref="Generic.WhiteSpace.ScopeIndent"/>
+
+    <!-- Outras boas práticas -->
+    <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+    <rule ref="Squiz.PHP.NonExecutableCode"/>
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration"/>
+    <rule ref="Generic.ControlStructures.InlineControlStructure"/>
+
+    <!-- Arquivos a serem analisados -->
+    <arg name="extensions" value="php"/>
+
+    <!-- Número de espaços por indentação -->
+    <arg name="tab-width" value="4"/>
+</ruleset>
