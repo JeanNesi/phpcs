@@ -5,6 +5,9 @@
     <!-- Inclui padrões do PSR12 -->
     <rule ref="PSR12"/>
 
+    <exclude-pattern>vendor/</exclude-pattern>
+    <exclude-pattern>tests/</exclude-pattern>
+
     <!-- Aspas simples -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
 
