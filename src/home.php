@@ -1,9 +1,9 @@
-<?php
-session_start();
-if (! isset($_SESSION['user'])) {
-    header('Location: index.php');
-    exit();
-}
+<?php 
+session_start(); 
+if (! isset($_SESSION["user"])) { 
+header("Location: index.php"); 
+exit();  
+} 
 ?> 
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ if (! isset($_SESSION['user'])) {
     </head>
     <body>
         <div class="welcome-container"> 
-            <h2>Bem-vindo, <?php echo $_SESSION['user']; ?>!</h2> 
+            <h2>Bem-vindo, <?php echo $_SESSION["user"]; ?>!</h2> 
             <a href="logout.php">Sair</a>
         </div>
     </body>
